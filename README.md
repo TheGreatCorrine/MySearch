@@ -1,36 +1,28 @@
-- **Project Name: CSC148 Assignment 2: Prefix Trees and Melodies**
+# MySearch: Lightweight Autocomplete Engine Inspired by Google Search
 
-**Introduction:**
-This project explores the implementation of prefix trees and applies them to develop an autocompletion tool similar to Google search. The assignment tasks involve implementing the Autocompleter ADT supporting operations like insertion, autocompletion, and removal. Additionally, algorithms for unlimited and limited autocompletion based on weights are developed.
+## Overview
 
-**Installation:**
-1. Clone the repository to your local machine using the command:
-   ```
-   git clone <repository_url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd CSC148_Assignment2
-   ```
+**MySearch** is a lightweight Python-based autocompletion engine inspired by the core ideas behind search input suggestions used by platforms like Google. It supports efficient prefix-based querying, weighted suggestion ranking, and scalable word storage using trie (prefix tree) data structures.
 
-**Usage:**
-1. To get started, ensure you have Python installed on your machine.
-2. Open the project directory in your preferred code editor.
-3. Explore the provided Python files to understand the implementation of prefix trees and autocompletion algorithms.
-4. Run the provided test files to validate the functionality of the implemented classes and methods.
-5. Make sure to comment or uncomment some instances. If you hope to hear the beautiful melody, DO NOT FORGET to uncomment it!
+Originally developed as a foundation in understanding search engine mechanics, this project replicates some of the underlying principles of large-scale autocomplete systems — on a smaller scale — and is designed for easy integration and educational exploration.
 
-**Contributing:**
-We welcome contributions from the community to enhance the project further. If you'd like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and ensure all tests pass.
-4. Submit a pull request with a clear description of your changes.
+## Key Features
 
-**License:**
-This project is licensed under the MIT License. See the LICENSE file for details.
+- 🔍 **Prefix-Based Autocompletion**  
+  Implements a trie (prefix tree) structure to enable fast lookup and suggestions for partial user inputs.
 
-**Additional Information:**
-For any questions or clarifications regarding the project, please reach out to the project maintainer or refer to the course materials provided by the instructor.
+- ⚖️ **Weighted Ranking Algorithm**  
+  Supports weight-based completions, where more frequently used terms can be prioritized, mimicking how real-world search engines rank results.
 
-Thank you for your interest in CSC148 Assignment 2! We hope you find this project informative and valuable for your learning journey.
+- 📚 **Scalable Design**  
+  Efficiently handles large datasets with structural variation, built to accommodate entries from over 50 different sources with diverse formats.
+
+- 💡 **Modular and Reusable**  
+  Clean class-based design enables this engine to be reused in other applications, from command-line interfaces to web-based search tools.
+
+## Installation
+
+```bash
+git clone https://github.com/TheGreatCorrine/MySearch.git
+cd MySearch
+pip install -r requirements.txt  # if applicable
